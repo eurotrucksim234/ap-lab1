@@ -1,0 +1,16 @@
+# Служебные папки Quartus II, которые пересоздаются при компиляции
+db/
+incremental_db/
+*.qws
+*.bak
+*.flock
+
+# Из результатов компиляции храним только прошивку, файл выводов и сводки
+output_files/*
+!output_files/lab1.sof
+!output_files/lab1.pin
+!output_files/*.summary
+
+# Из результатов моделирования храним только итоговые диаграммы
+simulation/qsim/*
+!simulation/qsim/lab1.sim.vwf

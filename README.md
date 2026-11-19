@@ -22,3 +22,9 @@
 - `lab1.qpf`, `lab1.qsf` — проект Quartus II;
 - `lab1.vwf` — входные воздействия для моделирования;
 - `output_files/lab1.sof` — файл прошивки ПЛИС.
+
+## Прошивка платы
+
+1. Подключить DE1 через разъём BLASTER, переключатель RUN/PROG в положение RUN.
+2. Quartus II: Tools → Programmer, Hardware Setup → USB-Blaster, режим JTAG.
+3. Add File → output_files/lab1.sof, отметить Program/Configure, нажать Start.
